@@ -1,0 +1,92 @@
+body {
+    background-image: url("https://t3.ftcdn.net/jpg/08/17/97/66/360_F_817976699_0sxSYEcPyi1Y8bzvwYNtWORYzkqPLiGV.jpg");
+    /*background-attachment: fixed;*/
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start; 
+   height: 100vh;
+   margin: 0;
+   padding-top: 50px;
+}
+
+.clock {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   position: relative;
+   background-image: url("https://i.pinimg.com/236x/c1/ca/6b/c1ca6b433058441cd1eb87ba6fd46ca1.jpg");
+   background-size: cover;
+   box-shadow: 2px 2px 10px rgba(240, 142, 6, 0.5);
+   background-position: center;
+}
+
+.hand {
+   position: absolute;
+   bottom: 50%;
+   left: 50%;
+   transform-origin: bottom center;
+   transform: translateX(-50%);
+   transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+   width: 8px;
+   height: 60px;
+   background-color: #ff4500;
+   border-radius: 10px;
+}
+
+.minute-hand {
+   width: 6px;
+   height: 90px;
+   background-color: #0080ff;
+   border-radius: 10px;
+}
+
+.second-hand {
+   width: 3px;
+   height: 120px;
+   background-color: #ffffff;
+   border-radius: 10px;
+}
+
+.center-dot {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 10px;
+   height: 10px;
+   background-color: #ffffff;
+   border-radius: 50%;
+}
+
+.number {
+   position: absolute;
+   font-size: 20px;
+   color: hsl(0, 23%, 94%);
+   transform: translate(-50%, -50%);
+   font-size: larger;
+}
+
+/* Positioning the clock numbers */
+.number-1 { top: 13%; left: 72%; }
+.number-2 { top: 28%; left: 84%; }
+.number-3 { top: 48%; left: 90%; }
+.number-4 { top: 70%; left: 85%; }
+.number-5 { top: 85%; left: 70%; }
+.number-6 { top: 90%; left: 50%; }
+.number-7 { top: 85%; left: 30%; }
+.number-8 { top: 70%; left: 15%; }
+.number-9 { top: 50%; left: 10%; }
+.number-10 { top: 30%; left: 15%; }
+.number-11 { top: 15%; left: 30%; }
+.number-12 { top: 7%; left: 50%; }
+
+@media (max-width: 600px) {
+   .number {
+       font-size: 5vw;
+   }
+}
